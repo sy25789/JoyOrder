@@ -5,7 +5,8 @@
         <side-bar />
       </div>
       <div class="col-9">
-        <personal-file />
+        <personal-file v-if="type==='personal'"/>
+        <credit-card v-if="type==='creditcard'"/>
       </div>
     </div>
   </div>
@@ -14,14 +15,17 @@
   import { defineComponent } from 'vue';
   import SideBar from './SideBar.vue';
   import Personal from './Personal.vue';
+  import CreditCard from './CreditCard.vue'
+
 
   export default defineComponent({
     components: {
         'side-bar': SideBar,
-        'personal-file': Personal
+        'personal-file': Personal,
+        'credit-card': CreditCard
     },
     setup() {
-      const type = 'personal';
+      const type = 'creditcard';
 
       return { type }
     }
