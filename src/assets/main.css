@@ -1,5 +1,65 @@
 @import './base.css';
 
-.nav-link {
-    color: #E0E0E0;
+::-webkit-scrollbar {
+
+    width: 7px;
+
+  }
+
+  ::-webkit-scrollbar-button {
+
+    background: transparent;
+
+    border-radius: 4px;
+
+  }
+
+  ::-webkit-scrollbar-track-piece {
+
+    background: transparent;
+
+  }
+
+  ::-webkit-scrollbar-thumb {
+
+    border-radius: 4px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    border: 1px solid slategrey;
+
+  }
+
+  ::-webkit-scrollbar-track {
+
+    box-shadow: transparent;
+
+  }
+
+#input-brand {
+  background-image: url(@/assets/images/search.svg) ;
+  background-position: 98% 50%;
+  background-repeat: no-repeat;
+  background-size: 10% 50%;
+  padding-right: 4%;
+}
+
+#brand-icon {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+}
+
+router-link,
+.btn {
+  text-decoration: none;
+}
+
+.border-gray {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
+
+.test {
+  border: 1px solid black;
 }
